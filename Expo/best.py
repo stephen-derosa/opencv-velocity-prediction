@@ -1,11 +1,11 @@
-def main():
-    import numpy as np
-    import cv2 as cv
-    import argparse
-    import os
-    import time
-    import matplotlib.pyplot as plt
+import numpy as np
+import cv2 as cv
+import argparse
+import os
+import time
+import matplotlib.pyplot as plt
 
+def main():
     def make_coordinates(image, line_parameters):
         slope, intercept = line_parameters
         if slope is not None:
@@ -76,7 +76,7 @@ def main():
     parser.add_argument('--camera', help='Camera devide number.', default=0, type=int)
     args = parser.parse_args()
 
-    cap = cv.VideoCapture("best.avi")
+    cap = cv.VideoCapture("lin_vel_13/lin_vel_13.mp4")
 
     while True:
         _, frame = cap.read()
