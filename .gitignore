@@ -1,3 +1,9 @@
+# Video Files
+*.svo
+*.avi
+*.MP4
+*.mp4
+
 # Prerequisites
 *.d
 
